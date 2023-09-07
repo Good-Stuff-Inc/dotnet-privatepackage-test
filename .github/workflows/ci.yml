@@ -11,5 +11,5 @@ jobs:
           dotnet-version: '3.1.x'
           source-url: https://nuget.pkg.github.com/marcosbergami/index.json
         env:
-          NUGET_AUTH_TOKEN: ${{secrets.$PACKAGES_TOKEN}}
+          NUGET_AUTH_TOKEN: ${{secrets.PACKAGES_TOKEN}}
       - run: dotnet build
